@@ -32,7 +32,6 @@ namespace Vivace
 
             FrmMain = this;
             FrmList = new ListForm();
-            FrmList.Left = this.Right;
             picCover.Left = (this.ClientSize.Width - picCover.Size.Width) / 2;
 
             FrmList.Show(this);
