@@ -119,11 +119,12 @@ namespace Vivace
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.LocationChanged += new System.EventHandler(this.Form1_LocationChanged);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
+            this.LocationChanged += new System.EventHandler(this.MainForm_LocationChanged);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.MainForm_MouseDown);
             ((System.ComponentModel.ISupportInitialize)(this.picCover)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
+
         }
 
         private System.Windows.Forms.PictureBox picCover;

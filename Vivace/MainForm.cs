@@ -209,15 +209,6 @@ namespace Vivace
             FrmList.LstSkipped.TopIndex = FrmList.LstSkipped.Items.Count - 1;
         }
 
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Left)
-            {
-                Imports.ReleaseCapture();
-                Imports.SendMessage(Handle, Imports.WM_NCLBUTTONDOWN, Imports.HT_CAPTION, 0);
-            }
-        }
-
         private void btnSkip_Click(object sender, EventArgs e)
         {
             SkipMusic();
@@ -239,7 +230,16 @@ namespace Vivace
             }
         }
 
-        private void Form1_LocationChanged(object sender, EventArgs e)
+        private void MainForm_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Imports.ReleaseCapture();
+                Imports.SendMessage(Handle, Imports.WM_NCLBUTTONDOWN, Imports.HT_CAPTION, 0);
+            }
+        }
+
+        private void MainForm_LocationChanged(object sender, EventArgs e)
         {
             FrmList.Left = this.Right;
             FrmList.Top = this.Top;

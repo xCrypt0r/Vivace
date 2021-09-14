@@ -22,7 +22,7 @@ namespace Vivace
             LblCorrectRate = lblCorrectRate;
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void ListForm_Load(object sender, EventArgs e)
         {
             this.Left = MainForm.FrmMain.Right;
             this.Top = MainForm.FrmMain.Top;
