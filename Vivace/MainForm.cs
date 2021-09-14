@@ -92,7 +92,6 @@ namespace Vivace
             lblCount.Text = (Matched.Count + Skipped.Count + 1) + " / " + Musics.Length;
             txtAnswer.Text = "";
             txtAnswer.Enabled = true;
-            btnSkip.Enabled = true;
 
             txtAnswer.Focus();
             HideAnswer();
@@ -152,8 +151,6 @@ namespace Vivace
 
         public void SkipMusic()
         {
-            btnSkip.Enabled = false;
-
             TokenSource.Cancel();
             FrmList.LstSkipped.Items.Add(MainTitle);
             Skipped.Add(NowPlaying);
@@ -205,11 +202,6 @@ namespace Vivace
             FrmList.LblCorrectRate.Text = "정답률: " + percentage.ToString("F2") + "%";
             FrmList.LstMatched.TopIndex = FrmList.LstMatched.Items.Count - 1;
             FrmList.LstSkipped.TopIndex = FrmList.LstSkipped.Items.Count - 1;
-        }
-
-        private void btnSkip_Click(object sender, EventArgs e)
-        {
-            SkipMusic();
         }
 
         private void txtAnswer_KeyDown(object sender, KeyEventArgs e)

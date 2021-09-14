@@ -21,7 +21,6 @@ namespace Vivace
             this.picCover = new System.Windows.Forms.PictureBox();
             this.lblArtist = new System.Windows.Forms.Label();
             this.lblTitle = new System.Windows.Forms.Label();
-            this.btnSkip = new System.Windows.Forms.Button();
             this.txtAnswer = new System.Windows.Forms.TextBox();
             this.lblCount = new System.Windows.Forms.Label();
             this.tmrUptime = new System.Windows.Forms.Timer(this.components);
@@ -57,16 +56,6 @@ namespace Vivace
             this.lblTitle.Size = new System.Drawing.Size(24, 12);
             this.lblTitle.TabIndex = 3;
             this.lblTitle.Text = "title";
-            // 
-            // btnSkip
-            // 
-            this.btnSkip.Location = new System.Drawing.Point(12, 32);
-            this.btnSkip.Name = "btnSkip";
-            this.btnSkip.Size = new System.Drawing.Size(51, 49);
-            this.btnSkip.TabIndex = 5;
-            this.btnSkip.Text = "스킵";
-            this.btnSkip.UseVisualStyleBackColor = true;
-            this.btnSkip.Click += new System.EventHandler(this.btnSkip_Click);
             // 
             // txtAnswer
             // 
@@ -110,7 +99,6 @@ namespace Vivace
             this.Controls.Add(this.lblUptime);
             this.Controls.Add(this.lblCount);
             this.Controls.Add(this.txtAnswer);
-            this.Controls.Add(this.btnSkip);
             this.Controls.Add(this.lblTitle);
             this.Controls.Add(this.lblArtist);
             this.Controls.Add(this.picCover);
@@ -130,7 +118,6 @@ namespace Vivace
         private System.Windows.Forms.PictureBox picCover;
         private System.Windows.Forms.Label lblArtist;
         private System.Windows.Forms.Label lblTitle;
-        private System.Windows.Forms.Button btnSkip;
         private System.Windows.Forms.TextBox txtAnswer;
         private System.Windows.Forms.Label lblCount;
         private System.Windows.Forms.Timer tmrUptime;
