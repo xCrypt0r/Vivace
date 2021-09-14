@@ -20,7 +20,6 @@ namespace Vivace
         public static string[] Answer;
         public static string NowPlaying;
         public static string MainTitle;
-        public static int Count = 0;
         public static HashSet<string> Matched = new HashSet<string>();
         public static List<string> Skipped = new List<string>();
         public static CancellationTokenSource TokenSource;
@@ -91,7 +90,7 @@ namespace Vivace
             NowPlaying = fileName;
             MainTitle = music.Tag.Title;
             picCover.Image = null;
-            lblCount.Text = ++Count + " / " + Musics.Length;
+            lblCount.Text = (Matched.Count + Skipped.Count + 1) + " / " + Musics.Length;
             txtAnswer.Text = "";
             txtAnswer.Enabled = true;
             btnSkip.Enabled = true;
