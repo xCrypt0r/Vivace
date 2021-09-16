@@ -60,12 +60,13 @@ namespace Vivace
             // txtAnswer
             // 
             this.txtAnswer.BackColor = System.Drawing.SystemColors.Menu;
-            this.txtAnswer.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.txtAnswer.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtAnswer.Font = new System.Drawing.Font("Gulim", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.txtAnswer.ForeColor = System.Drawing.Color.White;
             this.txtAnswer.ImeMode = System.Windows.Forms.ImeMode.Hangul;
             this.txtAnswer.Location = new System.Drawing.Point(14, 357);
             this.txtAnswer.Name = "txtAnswer";
-            this.txtAnswer.Size = new System.Drawing.Size(412, 32);
+            this.txtAnswer.Size = new System.Drawing.Size(412, 25);
             this.txtAnswer.TabIndex = 0;
             this.txtAnswer.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txtAnswer_KeyDown);
             // 

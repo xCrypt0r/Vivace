@@ -33,6 +33,16 @@ namespace Vivace
             FrmMain = this;
             FrmList = new ListForm();
             picCover.Left = (this.ClientSize.Width - picCover.Size.Width) / 2;
+            txtAnswer.BackColor = this.BackColor;
+
+            var lblBottomLine = new Label()
+            {
+                Height = 2,
+                Dock = DockStyle.Bottom,
+                BackColor = Color.HotPink
+            };
+
+            txtAnswer.Controls.Add(lblBottomLine);
 
             FrmList.Show(this);
 

@@ -27,11 +27,13 @@ namespace Vivace
             // 
             // lstMatched
             // 
+            this.lstMatched.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.lstMatched.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstMatched.FormattingEnabled = true;
             this.lstMatched.ItemHeight = 12;
             this.lstMatched.Location = new System.Drawing.Point(22, 58);
             this.lstMatched.Name = "lstMatched";
-            this.lstMatched.Size = new System.Drawing.Size(140, 232);
+            this.lstMatched.Size = new System.Drawing.Size(140, 216);
             this.lstMatched.TabIndex = 0;
             // 
             // label1
@@ -48,11 +50,13 @@ namespace Vivace
             // 
             // lstSkipped
             // 
+            this.lstSkipped.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
+            this.lstSkipped.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.lstSkipped.FormattingEnabled = true;
             this.lstSkipped.ItemHeight = 12;
             this.lstSkipped.Location = new System.Drawing.Point(168, 58);
             this.lstSkipped.Name = "lstSkipped";
-            this.lstSkipped.Size = new System.Drawing.Size(140, 232);
+            this.lstSkipped.Size = new System.Drawing.Size(140, 216);
             this.lstSkipped.TabIndex = 4;
             // 
             // label2
@@ -88,7 +92,7 @@ namespace Vivace
             // lblCorrectRate
             // 
             this.lblCorrectRate.AutoSize = true;
-            this.lblCorrectRate.Location = new System.Drawing.Point(23, 295);
+            this.lblCorrectRate.Location = new System.Drawing.Point(23, 286);
             this.lblCorrectRate.Name = "lblCorrectRate";
             this.lblCorrectRate.Size = new System.Drawing.Size(81, 12);
             this.lblCorrectRate.TabIndex = 8;
@@ -98,7 +102,7 @@ namespace Vivace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(60)))), ((int)(((byte)(60)))));
             this.ClientSize = new System.Drawing.Size(334, 312);
             this.Controls.Add(this.lblCorrectRate);
             this.Controls.Add(this.lblSkippedCount);
